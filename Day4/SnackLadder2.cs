@@ -13,7 +13,7 @@ namespace Day4
         public static int dicecount1 = 0, dicecount2 = 0;
         public static void TwoPlayerMethod()
         {
-            Console.WriteLine("\n\n Two player game Begins here....................................................................................\n");
+         
 
             while (position1 < 100 && position2 < 100)
             {
@@ -33,9 +33,9 @@ namespace Day4
                 Random opt2 = new Random();
                 optNum2 = opt2.Next(1, 4);
 
-                if (optNum1 == 1)  //optNum1=1 ----no play ,,,,, optNum1=2 ----ladder,,,,optNum1=3 ----snake
+                if (optNum1 == 1)  
                 {
-                    dicecount1++;//  dicecount = dicecount+1;
+                    dicecount1++;
                     Console.WriteLine("Player1 got NO PLAY Option \n Player1 Dice value: {0} \n Player1 Position: {1}\n", num1, position1);
                 }
                 else if (optNum1 == 2)
@@ -49,7 +49,7 @@ namespace Day4
 
                     Console.WriteLine("Player1 got Ladder Option \n Player1 Dice value: {0} \n player1 position : {1}", num1, position1);
                     Console.WriteLine("Playing again since Player1 got ladder ");
-                    //Again rolling dice since got ladder
+                    
                     Random obj3 = new Random();
                     num3 = obj3.Next(1, 7);
                     position1 = position1 + num3;
@@ -78,11 +78,11 @@ namespace Day4
                     Console.WriteLine("Player1 Dice value: {0}\n", num1);
                 }
 
-                // Programing for player 2...................................................................
+                //  for player 2.
 
-                if (optNum2 == 1)  //optNum1=1 ----no play ,,,,, optNum1=2 ----ladder,,,,optNum1=3 ----snake
+                if (optNum2 == 1)  
                 {
-                    dicecount2++;    //  dicecount = dicecount+1;
+                    dicecount2++;    
                     Console.WriteLine("Player2 got NO PLAY Option \n Player2 Dice value: {0} \n", num1);
                 }
                 else if (optNum2 == 2)
