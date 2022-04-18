@@ -10,7 +10,8 @@ namespace Day4
     {
         static void Main(string[] args)
         {
-            SnackLadder1.SingleMethod();
+            //SnackLadder1.SingleMethod();
+            SnackLadder2.TwoPlayerMethod();
             Console.ReadLine();
         }
     }
